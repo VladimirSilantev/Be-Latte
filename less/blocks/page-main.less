@@ -1,0 +1,89 @@
+.page-main {
+  display: flex;
+  position: relative;
+  top: 280px;
+  flex-direction: column;
+  margin: 0 auto;
+  width: @base-width;
+  text-transform: uppercase;
+  font-family: "PT Sans", "Arial", sans-serif;
+  font-size: 14px;
+  line-height: 1.444;
+}
+
+.page-main-mobile {
+	top: 50px;      //50
+}
+
+.page-main__wrapper {
+  padding: 0 5px;
+  position: relative;
+}
+
+.page-main__title {
+	text-align: center;
+	color: @coffee-color;
+}
+
+.page-main__description {
+	padding: 0;
+	margin: 0;
+	text-align: center;
+	color: @coffee-color;
+}
+
+.advantages__item {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	margin-top: 20px;
+	margin-bottom: 20px;
+}
+
+.advantages__title {
+	position: absolute;
+	padding: 0;
+	margin: 0;
+	font-size: 40px;
+	color: @coffee-color;
+}
+
+.prise__table {
+	color: @coffee-color;
+}
+
+.prise__table td:first-child {
+	width: 150px;
+	font-weight: bold;
+}
+
+@media (min-width: @tablet-width) {
+	.page-main {
+		top: 400px;
+		width: 100%;
+	}
+
+	.page-main__wrapper {
+	display: flex;
+	flex-direction: column;
+    align-self: center;
+  	width: @tablet-width;
+	}
+
+	.advantages__wrapper {
+		display: flex;
+		justify-content: center;
+		align-items: flex-start;
+	}
+
+	.advantages__item {
+		margin: 20px auto;
+	}
+}
+
+@media (min-width: @desktop-width) {
+	.page-main{
+		top: 500px;
+	}
+}
